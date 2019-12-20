@@ -1,0 +1,335 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #eeeeee;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -80px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 140px 90px 30px;
+}
+
+.footer {
+    background-color: #f9f9f9;
+    padding-top: 10px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+/* Header */
+
+.navbar-fixed-top {
+    background-image: url("../images/header-slim.png");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-color: #f9f9f9;
+    border: none;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.navbar-brand {
+    /* Remove navbar-brand padding for firefox bug workaround */
+    padding: 0px;
+    float: right;
+}
+
+.navbar-brand>img {
+    height: 250%;
+    padding: 20px;
+    padding-right: 0px;
+    width: auto;
+}
+
+.navbar-left-text {
+    padding-top: 15px;
+}
+
+.text-contacts {
+    font-size: 0.7em;
+    font-weight: bold;
+    margin: 0 0 1px;
+}
+
+.text-underlined {
+    text-decoration: underline;
+    color: black;
+}
+
+.header-comments {
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Form to add new comments */
+
+.add-comment {
+    max-width: 45%;
+    padding-top: 10px;
+}
+
+#comments-user_name {
+    border: none;
+}
+
+#comments-comment_text {
+    border-color: black;
+    background-color: #eeeeee;
+}
+
+.add-comment-submit {
+    color: black;
+    border-color: black;
+    background-color: #eeeeee;
+}
+
+hr {
+    margin-top: 10px;
+    border-color: darkgray;
+}
+
+/* Display comments */
+
+/* Individual comment */
+.commentDisplayedInList {
+    padding-bottom: 10px;
+}
+
+/* Individual comment - Date*/
+.commentInList-Date {
+    font-size: xx-small;
+}
+
+/* Individual comment - Username*/
+.commentInList-UName {
+    font-weight: bold;
+}
+
+/* Pagination */
+
+/* Selected element */
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    color: white;
+    background-color: #4d9f61;
+    border-color: black;
+}
+
+/* Enabled elements */
+.pagination > li > a, .pagination > li > span {
+    color: #4d9f61;
+    background-color: #fff;
+    border-color: black;
+}
+
+/* Disabled elements */
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+    border-color: black;
+}
+
+/* Footer */
+
+.footer-brand {
+    float: left;
+    height: 70px;
+}
+
+.footer-brand>img {
+    height: 85%;
+    padding-right: 30px;
+    width: auto;
+}
+
+.text-copyright {
+    padding-top: 5px;
+    font-size: 0.7em;
+}
+
+/* Media queries to adapt to different screen sizes */
+
+@media(max-width:767px) {
+
+    .text-contacts {
+        font-size: 0.7em;
+    }
+
+    .header-comments {
+        font-size: 1.5em;
+        margin-top: 5px;
+    }
+
+    .navbar {
+        margin-bottom: 5px;
+    }
+
+    .navbar-brand>img {
+        height: 150%;
+        padding: 10px;
+        padding-right: 0px;
+    }
+
+    .wrap > .container {
+        padding: 90px 50px 20px;
+    }
+
+    .footer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .navbar-default {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .add-comment {
+        max-width: 100%;
+    }
+
+    .add-comment-submit {
+        width: 100%;
+    }
+}
+
+@media(min-width:768px) {
+
+    .add-comment {
+        max-width: 45%;
+    }
+
+    .add-comment-submit {
+        float: right;
+    }
+}
+
+@media(max-width:600px) {
+
+    /* Buttons will be placed in two lines instead of one, remove rounded corners */
+
+    .pagination > li:first-child > a, .pagination > li:first-child > span {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .pagination > li:last-child > a, .pagination > li:last-child > span {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .footer-brand {
+        height: 60px;
+    }
+
+    .wrap > .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar-default {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
