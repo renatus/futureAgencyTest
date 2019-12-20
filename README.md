@@ -67,7 +67,7 @@ if you're not sure, use `echo "$USER"` command to find it out.
 ```mysql
   create database YOUR_DB_NAME;
   GRANT ALL ON YOUR_DB_NAME.* TO 'YOUR_DB_UNAME'@localhost IDENTIFIED BY 'YOUR_DB_PASSWORD';
-  mysql -uYOUR_DB_UNAME -p YOUR_DB_NAME < 2019_12_09-future_dbbackup.sql
+  mysql -uYOUR_DB_UNAME -p YOUR_DB_NAME < 2019_12_20-future_dbbackup.sql
 ```
 
 After that, delete database backup file, even though it should not be web-accessible in it's current place:
